@@ -1,0 +1,43 @@
+img {
+  width: 200px;
+}
+.sub1{
+  border: 2px solid #ddd;
+  margin: 1%;
+  padding: 1%;
+  text-align: center;
+}
+h1{
+  text-align: center;
+}
+.mainDiv{
+  display: flex;
+  border: 2px solid #000;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width:450px) {
+  .mainDiv{
+    display: flex;
+    border: 2px solid #000;
+    flex-direction: column;
+  }
+
+}
+@media screen and (min-width:426px)and (max-width:768px) {
+  .mainDiv{
+    display: flex;
+    border: 2px solid #000;
+    flex-direction: column-reverse;
+  }
+
+}
+@media screen and (min-width:769px)and (max-width:1024px) {
+  .mainDiv{
+    display: flex;
+    border: 2px solid #000;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+  }
+
+}
